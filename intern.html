@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <!-- Loading third party fonts -->
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" >
+
+		<!-- Loading main css file -->
+		<link href="style.css" rel="stylesheet" >
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+    <title>Internship Opportunities</title>
+    <style>
+        @media screen and (max-width: 768px) {
+            .col-md-4 {
+    background-color: rgb(255, 255, 255); /* Set background color to white */
+    color: #000; /* Set text color to black */
+    padding: 20px; /* Add some padding for spacing */
+    width: 100%; /* Make containers full width on smaller screens */
+        padding: 10px; 
+}
+h2{
+    color: #000;  
+}
+
+/* Style the h1 and p elements inside .col-md-4 */
+.col-md-4 h1, .col-md-4 p {
+    color: #000; /* Set text color to black */
+}
+
+/* Style the button inside .col-md-4 */
+.col-md-4 .button {
+    background-color: rgb(253, 253, 253); /* Set button background color to black */
+    color: rgb(10, 10, 10); /* Set button text color to white */
+    padding: 10px 20px; /* Add padding to the button for spacing */
+    text-decoration: none; /* Remove underlines from the button text */
+}
+
+/* Style the button on hover */
+.col-md-4 .button:hover {
+    background-color: #333; /* Change button background color on hover */
+}
+
+		
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 20px; /* Spacing between menu items */
+    position: relative;
+	text-decoration: none;
+}
+
+/* Style for the dropdown submenu */
+.submenu {
+	text-decoration: none;
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Adjust the gap between the main item and submenu */
+    left: 0;
+    background-color: #444; /* Background color of the dropdown menu */
+    padding: 10px;
+    z-index: 1; /* Ensure the dropdown appears on top of other elements */
+}
+
+.menu-item:hover .submenu {
+    display: block; /* Show the dropdown when the parent menu item is hovered */
+}
+
+/* Style for the links in the menu */
+.menu-item a {
+    color: #fff; /* Text color for menu links */
+    text-decoration: none;
+    white-space: nowrap; 
+}
+
+/* Style for the links in the submenu */
+.submenu .menu-item a {
+    color: #fff; /* Text color for submenu links */
+    text-decoration: none;
+}
+
+/* Style for the current menu item */
+.current-menu-item a {
+    font-weight: bold; /* Style for the current menu item */
+}
+
+
+       /* CSS to arrange categories in a row */
+.categories-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.categ {
+    flex-basis: 33%;
+    flex: 1;
+    margin: 10px; /* Optional: Add margin between categories */
+    border: 1px solid #ccc; /* Optional: Add border for visual separation */
+    padding: 10px; /* Optional: Add padding for better styling */
+}
+ 
+        }
+.col-md-4 {
+    background-color: rgb(255, 255, 255); /* Set background color to white */
+    color: #000; /* Set text color to black */
+    padding: 20px; /* Add some padding for spacing */
+}
+h2{
+    color: #000;  
+}
+
+/* Style the h1 and p elements inside .col-md-4 */
+.col-md-4 h1, .col-md-4 p {
+    color: #000; /* Set text color to black */
+}
+
+/* Style the button inside .col-md-4 */
+.col-md-4 .button {
+    background-color: rgb(253, 253, 253); /* Set button background color to black */
+    color: rgb(10, 10, 10); /* Set button text color to white */
+    padding: 10px 20px; /* Add padding to the button for spacing */
+    text-decoration: none; /* Remove underlines from the button text */
+}
+
+/* Style the button on hover */
+.col-md-4 .button:hover {
+    background-color: #333; /* Change button background color on hover */
+}
+
+		
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 20px; /* Spacing between menu items */
+    position: relative;
+	text-decoration: none;
+}
+
+/* Style for the dropdown submenu */
+.submenu {
+	text-decoration: none;
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Adjust the gap between the main item and submenu */
+    left: 0;
+    background-color: #444; /* Background color of the dropdown menu */
+    padding: 10px;
+    z-index: 1; /* Ensure the dropdown appears on top of other elements */
+}
+
+.menu-item:hover .submenu {
+    display: block; /* Show the dropdown when the parent menu item is hovered */
+}
+
+/* Style for the links in the menu */
+.menu-item a {
+    color: #fff; /* Text color for menu links */
+    text-decoration: none;
+    white-space: nowrap; 
+}
+
+/* Style for the links in the submenu */
+.submenu .menu-item a {
+    color: #fff; /* Text color for submenu links */
+    text-decoration: none;
+}
+
+/* Style for the current menu item */
+.current-menu-item a {
+    font-weight: bold; /* Style for the current menu item */
+}
+
+
+       /* CSS to arrange categories in a row */
+.categories-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.categ {
+    flex: 1;
+    margin: 10px; /* Optional: Add margin between categories */
+    border: 1px solid #ccc; /* Optional: Add border for visual separation */
+    padding: 10px; /* Optional: Add padding for better styling */
+}
+ 
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" id="branding">
+                <img src="images/logooo.png" alt="SAIBU EWADE LEGAL CONSULT" class="logo">
+                <div class="branding-copy">
+                    <h1 class="site-title">SAIBU EWADE LEGAL CONSULT</h1>
+                    <small class="site-description">An innovative online platform for law students and aspiring lawyers.</small>
+                </div>
+            </a>
+
+            <nav class="main-navigation">
+                <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                <ul class="menu">
+                    <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="about.html">About Us</a></li>
+                    <li class="menu-item"><a href="events.html">Events</a></li>
+                    <li class="menu-item"><a href="news/contact.html">Contact</a></li>
+                    <li class="menu-item"><a href="news/index.html">News</a></li>
+                    
+                    <li class="menu-item has-submenu">
+                        <a href="#">Career
+                        <ul class="submenu">
+                            <li class="menu-item"><a href="intern.html">Intenship</a></li>
+                            <li class="menu-item"><a href="pub.html">Publications</a></li>
+                            <!-- Add more event links as needed -->
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="mobile-navigation"></nav>
+        </div>
+    </header> <!-- .site-header -->
+    <h1>Internship Opportunities</h1>
+    <div class="card-container" id="card-container-1">
+        <div class="left-container">
+            <div class="category" id="category1">
+                <h2>OUR LEGAL CONSULT</h2>
+                <p> At Saibu Ewade Legal Consult ,we are committed towards providing seedbed for talented and passionate individuals to hone relevant skills imperative to a successful career in their chosen field. As such, we offer internship programme geared towards providing a comprehensive range of learning and development opportunities necessary for individuals to excel in their roles and advance in their careers.
+                    Our learning and development opportunities are structured to ensure the continuous development of our intern’s skills and expertise. Some of our learning and development opportunities are inclusive of but not limited to; research and writing workshops, public speaking and online talk shows program, mentoring and coaching sessions, amongst others.
+                    We hereby invite interested individuals to join us as we trust our culture of excellence and collaboration to propel them to thrive and contribute to our shared success.We aim to attract individuals who are open to learning, detail-oriented and exhibit high level of commitment.
+                    </p>
+            </div>
+        </div>
+        <!-- Repeat the above structure for the remaining categories -->
+        <div class="right-container">
+            <div class="category" id="category1">
+                <h2>BENEFITS OF THE INTERNSHIP</h2>
+                <p>Great learning avenue, free trainings and mentorship as well as brain stimulation and challenging assignments.There is also an opportunity to become a part of a bright and vibrant team</p>
+            </div>
+        </div>
+        <!-- Repeat the above structure for the remaining categories -->
+    </div>
+    <div class="card-container" id="card-container-2">
+        <div class="left-container">
+            <div class="category" id="category1">
+                <h2>INTERNSHIP STRUCTURE</h2>
+                <p> Interns will undergo trainings and will be given tasks to complete within specified deadline. The internship program will provide an opportunity to experience a combination of research work and public speaking.
+                    There will be meetings scheduled to review activities and progress of interns before the end of their program.
+                    </p>
+            </div>
+        </div>
+        <!-- Repeat the above structure for the remaining categories -->
+        <div class="right-container">
+            <div class="category" id="category1">
+                <h2>ELIGIBILITY CRITERIA</h2>
+                <p>To be eligible to apply, you must be an undergraduate of a recognized university. Passionate applicants who fall outside this category may be considered.
+                    </p>
+            </div>
+        </div>
+        <!-- Repeat the above structure for the remaining categories -->
+    </div>
+    <div class="card-container" id="card-container-1">
+        <div class="left-container">
+            <div class="category" id="category1">
+                <h2>SELECTION CRITERIA</h2>
+                <p> Selections are made after thorough consideration of a candidate’s social and academic background including the candidate’s academic standing, leadership experience, past experience and extracurricular activities.
+                    </p>
+            </div>
+        </div>
+        <!-- Repeat the above structure for the remaining categories -->
+    </div>
+    <div class="contain">
+        <h1>SELECTION PROCESS</h1>
+        <div class="categories-row">
+            <div class="categ" id="categ1">
+                <p> • Applicants are required to send their CVs/resumes and an expression of interest (indicating the proposed duration of the internship) to saibuewadelegalconsult@gmail.com. Requirement of CV/Resume may be waived for students with limited experience but are passionate about the internship, upon indication.</p>
+            </div>
+    
+            <div class="categ" id="categ2">
+                <p> • Successful applicants will be contacted within 3 working days of receipt of application.</p>
+            </div>
+    
+            <div class="categ" id="categ3">
+                <p> • Due to the high volume of applications we receive at SELC, offers will remain open for acceptance for 14 working days from the date of the offer. Failure to communicate an acceptance of the offer will be deemed to be a rejection of the said offer and will consequently lead to a withdrawal of the offer. The next successful applicant will be offered the internship placement in such circumstance.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-container" id="card-container-1">
+            <div class="category" id="category1">
+                <h2>DURATION</h2>
+                <p> Our internship programs usually run for a period between one – three months however, longer periods may be considered. The internship opportunities are offered all year round and will be on a rolling basis.</p>
+            </div>
+        </div>
+</body>
+</html>
