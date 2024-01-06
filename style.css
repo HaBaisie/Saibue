@@ -323,6 +323,12 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 .counter .copy span { display: block; }
 /* line 343, sass/libs/_components.scss */
 .counter .copy span:first-child { color: #ac8074; }
+/* For smaller screens (e.g., mobile) */
+@media (max-width: 767px) {
+  .site-header .container #branding .branding-copy {
+    text-align: center; /* Center text */
+  }
+}
 
 /* Team */
 /* line 349, sass/libs/_components.scss */
