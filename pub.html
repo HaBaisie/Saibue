@@ -5,6 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAIBU EWEADE LEGAL CONSULT Publications</title>
 	<style>
+		        /* For smaller screens (e.g., mobile) */
+				@media (max-width: 767px) {
+        .site-header .container #branding {
+            text-align: center; /* Center text */
+        }
+
+        .site-header .container #branding .logo {
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+        }
+
+        /* Center the team divs horizontally and vertically */
+        .contain {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Add some spacing between team members */
+        .team {
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Style the team members' images */
+        .team img {
+            max-width: 100%;
+        }
+
+        /* Style the team names */
+        .team-name {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        /* Style the team roles/descriptions */
+        .team-desc {
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Style the team descriptions */
+        .team p {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+   
+    	.team img {
+			max-width: 100%;
+			border-radius: 50%; /* This rounds the image */
+    	}
 		/* For smaller screens (e.g., mobile) */
 		@media (max-width: 767px) {
 		.site-header .container #branding {
@@ -24,7 +77,7 @@
 			background-color: #f0f0f0;
 		}
 		h2{
-    color: #000;  }
+    		color: #000;  }
 		header {
 			background-color: #333;
 			color: #fff;
@@ -55,15 +108,28 @@
 	<link href="style.css" rel="stylesheet" >
 </head>
 <body>
-    <header>
-        <nav class="main-navigation">
-			<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
-			<ul class="menu">
-				<li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
-				<li class="menu-item"><a href="pub.html">Publications</a></li>
-			</ul>
-		</nav>
-    </header>
+    <header class="site-header">
+		<div class="container">
+			<a href="index.html" id="branding">
+				<img src="images/g.png" alt="SAIBU EWADE LEGAL CONSULT" class="logo">
+				<div class="branding-copy">
+					<h1 class="site-title">SAIBU EWADE LEGAL CONSULT</h1>
+					<small class="site-description">An inventive online platform for law students and aspiring lawyers, guiding them toward a successful legal career.</small>
+				</div>
+			</a>
+			<nav class="main-navigation">
+				<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+				<ul class="menu">
+					<li class="menu-item"><a href="index.html">Home</a></li>
+					<li class="menu-item"><a href="about.html">About Us</a></li>
+					<li class="menu-item"><a href="events.html">Events</a></li>
+					<li class="menu-item current-menu-item"><a href="pub.html">Publication</a></li>
+				</ul>
+			</nav>
+			<nav class="mobile-navigation"></nav>
+		</div>
+   
+</header>
     <main>
 		<article>
 			<p>Title: A SUCCESSFUL CLAIM OF DEFAMATION UNDER NIGERIA LAW: HOW TO GO ABOUT IT</p>
