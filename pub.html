@@ -20,15 +20,23 @@
     <![endif]-->
 
     <style>
+        body {
+            background-color: white; /* Change the background to white */
+        }
         .publication {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-bottom: 30px;
+            background-color: #f9f9f9; /* Light background for each publication */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         }
         .publication img {
-            max-width: 100%;
+            width: 200px; /* Resize the image */
             height: auto;
+            border-radius: 10px;
         }
         .publication-content {
             text-align: center;
@@ -36,6 +44,7 @@
         }
         .publication-content p {
             font-size: 1.2em;
+            color: #333; /* Dark text color for better readability */
         }
         .publication-content a {
             display: inline-block;
@@ -45,6 +54,10 @@
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .publication-content a:hover {
+            background-color: #555; /* Darker background on hover */
         }
     </style>
 </head>
